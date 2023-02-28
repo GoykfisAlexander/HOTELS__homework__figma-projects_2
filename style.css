@@ -1,0 +1,245 @@
+body {
+  margin: 0 0 0 0;
+  width: 100vw;
+  height: 500vw;
+  font-size: 7vw;
+  background: url("./images/page.png") center/cover no-repeat;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15.5vw;
+}
+body header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 27vw;
+  margin-left: 43vw;
+}
+body header .nav__span {
+  font-size: 0.13em;
+  color: #949494;
+  cursor: pointer;
+}
+body header .nav .active {
+  color: #ffcf7a;
+}
+body header button {
+  display: flex;
+  margin-left: 5vw;
+  background: url(./images/button-call.svg) center/cover no-repeat;
+  width: 3.5vw;
+  height: 3.5vw;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+body .black-rectangles-with-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 230vw 0 0 8.5vw;
+  width: 83vw;
+  height: 68vw;
+}
+body .black-rectangles-with-buttons_top, body .black-rectangles-with-buttons_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 37%;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: end;
+  background-color: black;
+  width: 45%;
+  height: 100%;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons:hover, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons:hover {
+  background-color: #151515;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons__buttons, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 8vw;
+  height: 8vw;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons__buttons__button, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons__buttons__button {
+  width: 20%;
+  height: 20%;
+  border: none;
+  cursor: pointer;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons__buttons__button_left, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons__buttons__button_left {
+  background: url("./images/left.svg") center/cover no-repeat;
+}
+body .black-rectangles-with-buttons_top .black-rectangle-with-buttons__buttons__button_right, body .black-rectangles-with-buttons_bottom .black-rectangle-with-buttons__buttons__button_right {
+  background: url("./images/right.svg") center/cover no-repeat;
+}
+body .black-rectangles-with-buttons_top {
+  justify-content: end;
+}
+body .get-catalog {
+  width: 20vw;
+  height: 5vw;
+  background: url("./images/get-catalog.svg") center/cover no-repeat;
+  border: none;
+  border-radius: 2px;
+  margin: 13vw 0 0 40vw;
+  cursor: pointer;
+}
+body .black-rectangles {
+  margin: 13vw 0 0 8.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 83vw;
+  height: 55vw;
+}
+body .black-rectangles div {
+  background-color: black;
+  width: 31%;
+  height: 33%;
+}
+body .black-rectangles div:hover {
+  background-color: #151515;
+}
+body .fireplace-author {
+  width: 42vw;
+  height: 26.5vw;
+  margin: 15vw 0 0 51vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+body .fireplace-author input[type=range] {
+  margin: 3vw 0 0 6vw;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 30vw;
+  height: 0.2vw;
+  background: linear-gradient(to right, #ffcf7a 0%, #ffcf7a 63%, #646464 63%, #646464 100%);
+}
+body .fireplace-author input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 2vw;
+  height: 2vw;
+  cursor: ew-resize;
+  background: #ffcf7a;
+  border-radius: 2px;
+}
+body .fireplace-author .front-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 23vw;
+  height: 6vw;
+}
+body .fireplace-author .front-panel__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+body .fireplace-author .front-panel__buttons__button {
+  width: 2vw;
+  height: 2vw;
+  border: none;
+  cursor: pointer;
+}
+body .fireplace-author .front-panel__buttons__button_left {
+  background: url("./images/left.svg") center/cover no-repeat;
+}
+body .fireplace-author .front-panel__buttons__button_right {
+  background: url("./images/right.svg") center/cover no-repeat;
+}
+body .fireplace-author .front-panel .indicators {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  width: 25%;
+  height: 20%;
+}
+body .fireplace-author .front-panel .indicators div {
+  width: 20%;
+  height: 10%;
+  background-color: #464239;
+}
+body .fireplace-author .front-panel .indicators .active {
+  background-color: #ffcf7a;
+}
+body .fireplace-author .additional-functions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 27vw;
+  height: 8vw;
+  margin-left: 13vw;
+}
+body .fireplace-author .additional-functions input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  width: 1.5vw;
+  height: 1.5vw;
+  border: 1px solid #ceb787;
+  border-radius: 2px;
+}
+body .submit-your-application {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 82.5vw;
+  height: 4.7vw;
+  margin: 5.6vw 0 0 8.5vw;
+}
+body .submit-your-application span {
+  margin-top: auto;
+  font-size: 0.24em;
+  color: #fff;
+}
+body .submit-your-application__button {
+  height: 100%;
+  width: 22%;
+  background: url("./images/button-submit.svg") center/cover no-repeat;
+  border: none;
+  cursor: pointer;
+}
+body .contact-manager {
+  cursor: pointer;
+  width: 20vw;
+  height: 5vw;
+  margin: 30.5vw 0 0 72vw;
+  font-family: "Lab Grotesque";
+  font-size: 0.18em;
+  color: #fff;
+  background: none;
+  border: 1px solid #ceb787;
+  border-radius: 2px;
+}/*# sourceMappingURL=style.css.map */

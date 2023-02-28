@@ -1,0 +1,221 @@
+@mixin flex($row, $content-center, $items-center) {
+  display: flex;
+  flex-direction: $row;
+  justify-content: $content-center;
+  align-items: $items-center;
+}
+body {
+  margin: 0 0 0 0;
+  width: 100vw;
+  height: 500vw;
+  font-size: 7vw;
+  background: url("./images/page.png") center/cover no-repeat;
+  header {
+    @include flex(row, center, center);
+    height: 15.5vw;
+    .nav {
+      @include flex(row, space-between, center);
+      width: 27vw;
+      margin-left: 43vw;
+      &__span {
+        font-size: 0.13em;
+        color: #949494;
+        cursor: pointer;
+      }
+      .active {
+        color: #ffcf7a;
+      }
+    }
+    button {
+      display: flex;
+      margin-left: 5vw;
+      background: url(./images/button-call.svg) center/cover no-repeat;
+      width: 3.5vw;
+      height: 3.5vw;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+  }
+  .black-rectangles-with-buttons {
+    @include flex(column, space-between, center);
+
+    margin: 230vw 0 0 8.5vw;
+
+    width: 83vw;
+    height: 68vw;
+    &_top,
+    &_bottom {
+      @include flex(row, space-between, center);
+      width: 100%;
+      height: 37%;
+      .black-rectangle-with-buttons {
+        @include flex(row, start, end);
+
+        background-color: black;
+        width: 45%;
+        height: 100%;
+        &:hover {
+          background-color: #151515;
+        }
+        &__buttons {
+          @include flex(row, space-evenly, center);
+
+          width: 8vw;
+          height: 8vw;
+          &__button {
+            width: 20%;
+            height: 20%;
+            border: none;
+            cursor: pointer;
+            &_left {
+              background: url("./images/left.svg") center/cover no-repeat;
+            }
+            &_right {
+              background: url("./images/right.svg") center/cover no-repeat;
+            }
+          }
+        }
+      }
+    }
+    &_top {
+      justify-content: end;
+    }
+  }
+  .get-catalog {
+    width: 20vw;
+    height: 5vw;
+    background: url("./images/get-catalog.svg") center/cover no-repeat;
+    border: none;
+    border-radius: 2px;
+    margin: 13vw 0 0 40vw;
+    cursor: pointer;
+  }
+  .black-rectangles {
+    margin: 13vw 0 0 8.5vw;
+
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 83vw;
+    height: 55vw;
+    div {
+      background-color: black;
+      width: 31%;
+      height: 33%;
+      &:hover {
+        background-color: #151515;
+      }
+    }
+  }
+  .fireplace-author {
+    width: 42vw;
+    height: 26.5vw;
+    margin: 15vw 0 0 51vw;
+    @include flex(column, space-between, start);
+    input[type="range"] {
+      margin: 3vw 0 0 6vw;
+      appearance: none;
+      width: 30vw;
+      height: 0.2vw;
+      background: linear-gradient(
+        to right,
+        #ffcf7a 0%,
+        #ffcf7a 63%,
+        #646464 63%,
+        #646464 100%
+      );
+      &::-webkit-slider-thumb {
+        appearance: none;
+        width: 2vw;
+        height: 2vw;
+        cursor: ew-resize;
+        background: #ffcf7a;
+        border-radius: 2px;
+      }
+    }
+    .front-panel {
+      @include flex(column, space-between, center);
+      width: 23vw;
+      height: 6vw;
+      &__buttons {
+        @include flex(row, space-between, center);
+        width: 100%;
+        height: 80%;
+        &__button {
+          width: 2vw;
+          height: 2vw;
+          border: none;
+          cursor: pointer;
+          &_left {
+            background: url("./images/left.svg") center/cover no-repeat;
+          }
+          &_right {
+            background: url("./images/right.svg") center/cover no-repeat;
+          }
+        }
+      }
+      .indicators {
+        @include flex(row, space-between, end);
+
+        width: 25%;
+        height: 20%;
+        div {
+          width: 20%;
+          height: 10%;
+          background-color: #464239;
+        }
+        .active {
+          background-color: #ffcf7a;
+        }
+      }
+    }
+    .additional-functions {
+      @include flex(column, space-between, center);
+      flex-wrap: wrap;
+      align-content: space-between;
+      width: 27vw;
+      height: 8vw;
+      margin-left: 13vw;
+      input {
+        appearance: none;
+        cursor: pointer;
+        width: 1.5vw;
+        height: 1.5vw;
+        border: 1px solid #ceb787;
+        border-radius: 2px;
+      }
+    }
+  }
+  .submit-your-application {
+    @include flex(row, space-between, center);
+
+    width: 82.5vw;
+    height: 4.7vw;
+    margin: 5.6vw 0 0 8.5vw;
+    span {
+      margin-top: auto;
+      font-size: 0.24em;
+      color: #fff;
+    }
+    &__button {
+      height: 100%;
+      width: 22%;
+      background: url("./images/button-submit.svg") center/cover no-repeat;
+      border: none;
+      cursor: pointer;
+    }
+  }
+  .contact-manager {
+    cursor: pointer;
+    width: 20vw;
+    height: 5vw;
+    margin: 30.5vw 0 0 72vw;
+    font-family: "Lab Grotesque";
+    font-size: 0.18em;
+    color: #fff;
+    background: none;
+    border: 1px solid #ceb787;
+    border-radius: 2px;
+  }
+}
