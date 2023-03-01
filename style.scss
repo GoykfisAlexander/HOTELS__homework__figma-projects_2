@@ -171,9 +171,9 @@ body {
       }
     }
     .additional-functions {
-      @include flex(column, space-between, center);
-      flex-wrap: wrap;
-      align-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 85%;
       width: 27vw;
       height: 8vw;
       margin-left: 13vw;
@@ -182,7 +182,7 @@ body {
         cursor: pointer;
         width: 1.5vw;
         height: 1.5vw;
-        border: 1px solid #ceb787;
+        box-shadow: inset 0 0 0 1px #ceb787;
         border-radius: 2px;
       }
     }
