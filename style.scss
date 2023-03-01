@@ -173,6 +173,7 @@ body {
     .additional-functions {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      grid-template-rows: 25% 25% 25% 25%;
       column-gap: 85%;
       width: 27vw;
       height: 8vw;

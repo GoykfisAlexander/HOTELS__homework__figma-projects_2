@@ -192,6 +192,7 @@ body .fireplace-author .front-panel .indicators .active {
 body .fireplace-author .additional-functions {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
   -moz-column-gap: 85%;
        column-gap: 85%;
   width: 27vw;
